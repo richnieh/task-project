@@ -6,12 +6,12 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class Tasks extends Component
+class Task extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(Task $tasks)
     {
         //
     }
@@ -21,6 +21,6 @@ class Tasks extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.tasks');
+        return view('components.tasks.index');
     }
 }
